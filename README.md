@@ -1,4 +1,8 @@
-### CBA Consult Integration of CloudApp Security and compliance reviews and ongoing Govenrance Framework verfication
+## CBA Consult Integration of CloudApp Security and compliance reviews and ongoing Govenrance Framework verfication
+
+For the policies and blueprint request workflow and approvals execution please refer to project: https://github.com/CBA-Consult/ICT-Governance-Framework-Application
+
+
 
 ## Microsoft Open Source Code of Conduct
 
