@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Troubleshooting SIEM integration - Cloud App Security
+title: Troubleshooting SIEM integration 
 description: This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides resolutions for each.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/29/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Troubleshooting the SIEM agent
 
@@ -42,11 +21,11 @@ If you received a system alert regarding an issue with activity delivery through
 
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent
 
-1. In the Cloud App Security portal, go to Security Extensions page.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to Security Extensions page.
 1. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. For example, you can create a new SIEM agent with the following configuration:
     - **Protocol**: TCP
-    - **Remote host**: Any machine where you can listen to a port. For example, a simple solution would to use the same machine as the agent and set the remote host IP address to 127.0.0.1
-    - **Port**: Any port you can listen to on the remote host machine
+    - **Remote host**: Any device where you can listen to a port. For example, a simple solution would to use the same device as the agent and set the remote host IP address to 127.0.0.1
+    - **Port**: Any port you can listen to on the remote host device
 
     > [!NOTE]
     > This agent should run in parallel to the existing one, so network configuration might not be identical.
@@ -64,7 +43,7 @@ Use the following steps to validate your configuration:
 > [!NOTE]
 > The agent will only send activities in the timeframe of the issue on which you were alerted.
 
-1. If data is not received by your SIEM, then on the new SIEM agent machine, try listening to the port that you configured to forward activities to see if data is being sent from the agent to the SIEM. For example, run `netcat -l <port>` where `<port>` is the previously configured port number.
+1. If data is not received by your SIEM, then on the new SIEM agent device, try listening to the port that you configured to forward activities to see if data is being sent from the agent to the SIEM. For example, run `netcat -l <port>` where `<port>` is the previously configured port number.
 
 > [!NOTE]
 > If you are using `ncat`, make sure you specify the ipv4 flag `-4`.
@@ -75,7 +54,7 @@ Use the following steps to validate your configuration:
 
 1. The recovery SIEM agent will automatically stop sending data and be disabled once it reaches the end date.
 1. Validate in your SIEM that no new data is sent by the recovery SIEM agent.
-1. Stop the execution of the agent on your machine.
+1. Stop the execution of the agent on your device.
 1. In the portal, go to the SIEM Agent page and remove the recovery SIEM agent.
 1. Make sure your original SIEM Agent is still running properly.
 

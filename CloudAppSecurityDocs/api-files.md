@@ -1,25 +1,17 @@
 ---
-# required metadata
 title: Cloud App Security Files API
 description: This article provides information about using the Files API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Files API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This API is not available for Office 365 Cloud App Security.
+>
+> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API is not available for Office 365 Cloud App Security.
 
 The Files API provides you with metadata about the files and folders stored in your cloud apps, such as last modification date, ownership, and more.
 

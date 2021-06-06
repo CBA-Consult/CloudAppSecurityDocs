@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Manage alerts raised in Cloud App Security
 description: This article explains how to work with alerts raised in the Cloud App Security portal.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/22/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Manage alerts
 
@@ -69,7 +48,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
        - **Authorized violations or anomalous behavior** -  Authorized violations or anomalous behavior can result from legitimate use.
          - You can dismiss the alert.
 
-3. Any time you dismiss an alert, it's important to submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
+3. When you dismiss an alert, it's helpful if you submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. If you check the **It's OK to contact me about this alert** box, in select cases we may get back to you for additional information. You can follow these guidelines in deciding how to categorize the alert:
     - If legitimate use triggered the alert and it isn't a security issue, it could be one of these types:
 
       - Benign positive: The alert is accurate but the activity is legitimate. You can dismiss the alert and set the reason to **Actual severity is lower** or **Not interesting**.

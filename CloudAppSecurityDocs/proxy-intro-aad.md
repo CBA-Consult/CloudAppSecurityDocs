@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/14/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
@@ -37,6 +21,8 @@ Conditional Access App Control uses a reverse proxy architecture and integrates 
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Cloud App Security portal to further refine filters and set actions to be taken on a user. With the access and session policies, you can:
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
+
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
@@ -81,7 +67,7 @@ Conditional Access App Control enables you to create policies that take into acc
 Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions).
 
 ### Client-certificate authenticated devices
 
@@ -156,8 +142,8 @@ While session controls are built to work with any browser on any major platform 
 - Dynamics 365 CRM (preview)
 - Egnyte
 - Exchange Online
-- G Suite
 - GitHub
+- Google Workspace
 - HighQ
 - JIRA/Confluence
 - OneDrive for Business

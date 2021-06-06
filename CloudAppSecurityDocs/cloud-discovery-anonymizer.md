@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Anonymize user data in Cloud App Security
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Cloud Discovery data anonymization
 
@@ -49,12 +28,12 @@ Key points:
 
     - You can set the default in Cloud App Security to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
-    1. Under the Settings cog, select **Cloud Discovery settings**.
+        1. Select **Settings** > **Cloud Discovery settings**.
 
-    2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize machine information by default in 'Win10 Endpoint Users' report**.
-    3. Click **Save**.
+        2. In the **Anonymization** tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
+        3. Click **Save**.
 
-    ![Anonymization settings page](media/anonymizer1.png)
+        ![Anonymization settings page](media/anonymizer1.png)
 
 2. When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
 3. Cloud App Security replaces the username with an encrypted username.
@@ -65,7 +44,7 @@ Key points:
 5. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
 
     > [!NOTE]
-    > The following steps also work for machine names on the **Machines** tab.
+    > The following steps also work for device names on the **Devices** tab.
 
     **To resolve a single username**
 

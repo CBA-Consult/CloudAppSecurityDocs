@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Working with the risk score - Cloud App Security
+title: Working with the risk score 
 description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 1/27/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Working with App risk scores
 
@@ -84,7 +63,7 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
     ![Suggest an app pop-up to Cloud App Security](media/suggest-new-app-pop-up.png)
 
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
+3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. 
 
 **To update a risk factor, score, or update app data:**
 

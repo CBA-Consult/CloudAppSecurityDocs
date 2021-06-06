@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Set up your organization's settings in Cloud App Security
 description: This article explains how to provide information about your organization in Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 11/01/2019
+ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Basic setup for Cloud App Security
 
@@ -47,7 +26,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## Set up the portal
 
-1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
 
 1. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 
@@ -65,12 +44,12 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. If you're integrating with Azure Advanced Threat Protection integration, see [Azure Advanced Threat Protection Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](azip-integration.md) for information.
 
 1. If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
 > [!NOTE]
-> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
 >
 > For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 

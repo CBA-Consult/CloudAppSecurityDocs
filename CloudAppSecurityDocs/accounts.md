@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Visibility into cloud app accounts - Cloud App Security
+title: Visibility into cloud app accounts 
 description: This article provides information about reviewing accounts from your connected apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Accounts
 
@@ -55,7 +34,9 @@ Following is a list of the account filters that can be applied. Most filters sup
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table appears with the addition of the red tie. ![accounts admin icon](media/accounts-admin-icon.png)
+* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. If the account has admin permissions the icon in the Accounts table appears with the addition of the red tie:
+
+    ![accounts admin icon](media/accounts-admin-icon.png)
 
 * **App**: You can filter for any API connected app being used by accounts in your organization.
 * **Domain**: Enables you to filter for users in specific domains.

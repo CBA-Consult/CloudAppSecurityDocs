@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Integrate Cloud App Security with Zscaler
 description: This article describes how to integrate Microsoft Cloud App Security with Zscaler for seamless Cloud Discovery and automated block of unsanctioned apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/03/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Integrate Cloud App Security with Zscaler
 
@@ -44,7 +23,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
 ## Deployment
 
 1. In the Zscaler portal, do the steps to complete the [Zscaler partner integration with Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
-2. In the Cloud App Security portal, do the following integration steps:
+2. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), do the following integration steps:
     1. Click on the settings cog and select **Cloud Discovery Settings**.
     2. Click on the **Automatic log upload** tab and then click **Add data source**.
     3. In the **Add data source** page, enter the following settings:

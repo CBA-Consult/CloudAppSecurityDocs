@@ -1,20 +1,9 @@
 ---
-# required metadata
-title: Best practices for protecting your organization - Cloud App Security
+title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: quickstart
 ms.date: 10/24/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: quickstart
 ---
-
 # Cloud App Security best practices
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -24,6 +13,7 @@ This article provides best practices for protecting your organization by using M
 The best practices discussed in this article include:
 
 > [!div class="checklist"]
+>
 > * [Discover and assess cloud apps](#discover-and-assess-cloud-apps)
 > * [Apply cloud governance policies](#apply-cloud-governance-policies)
 > * [Limit exposure of shared data and enforce collaboration policies](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
@@ -37,13 +27,13 @@ The best practices discussed in this article include:
 
 ## Discover and assess cloud apps
 
-Integrating Cloud App Security with Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) gives you the ability to use Cloud Discovery beyond your corporate network or secure web gateways. With the combined user and machine information, you can identify risky users or machines, see what apps they are using, and investigate further in the Microsoft Defender ATP portal.
+Integrating Cloud App Security with Microsoft Defender for Endpoint gives you the ability to use Cloud Discovery beyond your corporate network or secure web gateways. With the combined user and device information, you can identify risky users or devices, see what apps they are using, and investigate further in the Defender for Endpoint portal.
 
-**Best practice**: Enable Shadow IT Discovery using Microsoft Defender ATP  
-**Detail**: Cloud Discovery analyzes traffic logs collected by Microsoft Defender ATP and assesses identified apps against the cloud app catalog to provide compliance and security information. By configuring Cloud Discovery, you gain visibility into cloud use, Shadow IT, and continuous monitoring of the unsanctioned apps being used by your users.  
+**Best practice**: Enable Shadow IT Discovery using Defender for Endpoint  
+**Detail**: Cloud Discovery analyzes traffic logs collected by Defender for Endpoint and assesses identified apps against the cloud app catalog to provide compliance and security information. By configuring Cloud Discovery, you gain visibility into cloud use, Shadow IT, and continuous monitoring of the unsanctioned apps being used by your users.  
 **For more information**:
 
-* [Microsoft Defender ATP integration with Cloud App Security](wdatp-integration.md)
+* [Microsoft Defender for Endpoint integration with Cloud App Security](mde-integration.md)
 * [Set up Cloud Discovery](set-up-cloud-discovery.md)
 * [Discover and manage shadow IT in your network](tutorial-shadow-it.md)
 
@@ -98,7 +88,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [G Suite](connect-google-apps-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)

@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Connect GitHub Enterprise Cloud to Cloud App Security
 description: This article provides information about how to connect your GitHub Enterprise Cloud app to Cloud App Security using the API connector  for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 06/28/2020
+ms.date: 11/10/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ROBOTS: NOINDEX
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
 
@@ -73,6 +52,9 @@ Repeat this step for each additional connected organization.
         - In the **Homepage URL** box, enter the URL for the app's homepage.
         - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/connect`.
 
+            > [!NOTE]
+            > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect`
+
         ![Screenshot showing registering an oauth app](media/connect-github-register-oauth-app.png)
 
     > [!NOTE]
@@ -86,7 +68,7 @@ Repeat this step for each additional connected organization.
 
 ### Configure Cloud App Security
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, click the plus button followed by **GitHub**.
 

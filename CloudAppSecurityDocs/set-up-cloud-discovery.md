@@ -1,22 +1,8 @@
 ---
-# required metadata
-
-title: Deploy Cloud Discovery - Cloud App Security
+title: Deploy Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.date: 08/09/2020
-
-# optional metadata
-
-#ROBOTS:
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Set up Cloud Discovery
 
@@ -26,18 +12,21 @@ Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security'
 
 ## Snapshot and continuous risk assessment reports
 
-There are two types of reports you can generate:
+You can generate the following types of reports:
 
 - **Snapshot reports** - Provides ad-hoc visibility on a set on traffic logs you manually upload from your firewalls and proxies.
 
 - **Continuous reports** - Analyze all logs that are forwarded from your network using Cloud App Security. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
 
-  - [**Microsoft Defender ATP integration**](wdatp-integration.md): Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
+  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Cloud App Security integrates with Defender for Endpoint natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
   - [**Log collector**](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
   - **Secure Web Gateway (SWG)**: If you work with both Cloud App Security and one of the following SWGs, you can integrate the products to enhance your security Cloud Discovery experience. Together, Cloud App Security and SWGs provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
     - [Zscaler integration](zscaler-integration.md)
     - [iboss integration](iboss-integration.md)
     - [Corrata integration](corrata-integration.md)
+    - [Menlo Security integration](menlo-integration.md)
+
+- **[Cloud Discovery API](api-discovery.md)** – Use Cloud App Security's Cloud Discovery API to automate traffic log upload and get automated Cloud Discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -87,6 +76,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Stormshield
 - Websense - Web Security Solutions - Investigative detail report (CSV)
 - Websense - Web Security Solutions - Internet activity log (CEF)
+- WatchGuard
 - Zscaler
 
 > [!NOTE]
@@ -117,8 +107,8 @@ Data attributes (according to vendor documentation):
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-| Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
-| Fortinet FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
+| Fortinet Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
+| FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 | iboss |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Juniper SSG | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
@@ -132,6 +122,7 @@ Data attributes (according to vendor documentation):
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
 \* Versions 8.5 and later of Forcepoint Web Security Cloud are not supported

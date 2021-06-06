@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Blocking discovered apps - Cloud App Security
+title: Blocking discovered apps 
 description: This article describes the procedure for exporting block scripts for discovered apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/12/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Govern discovered apps
 
@@ -42,7 +21,7 @@ If you have a list of apps you want to sanction or unsanction, use the checkbox 
 To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](api-discovery-script.md).
 
 > [!NOTE]
-> If your tenant uses Microsoft Defender Advanced Threat Protection (ATP), Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender ATP](wdatp-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
+> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender for Endpoint](mde-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
 
 ## Export a block script to govern discovered apps
 

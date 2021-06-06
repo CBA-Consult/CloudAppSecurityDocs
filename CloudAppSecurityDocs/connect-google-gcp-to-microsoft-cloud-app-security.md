@@ -1,21 +1,8 @@
 ---
-# required metadata
-
 title: Connect Google Cloud Platform to Cloud App Security
 description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.service: cloud-app-security
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
 ---
 # Connect Google Cloud Platform to Microsoft Cloud App Security
 
@@ -23,7 +10,7 @@ ms.collection: M365-security-compliance
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
 
-We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a G Suite instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected G Suite organization** steps when you add the GCP connection details.
+We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a Google Workspace instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected Google Workspace organization** steps when you add the GCP connection details.
 
 ## Prerequisites
 
@@ -115,7 +102,7 @@ Create a dedicated project in GCP under your organization to enable integration 
     ![Screenshot showing create private key dialog](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
-    > You'll need the JSON file that is downloaded to your machine later.
+    > You'll need the JSON file that is downloaded to your device later.
 
 #### Retrieve your Organization ID
 
@@ -127,16 +114,16 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 #### Add the GCP connection details
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
+1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
     > [!NOTE]
-    > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
+    > We recommended that you connect your Google Workspace instance to get unified user management and governance. This is the recommended even if you do not use any Google Workspace products and the GCP users are managed via the Google Workspace user management system.
 
     **For a new connector**
 
-    1. Click the plus sign followed by **Google Cloud Platform**.
+    1. Click the plus sign (**+**) followed by **Google Cloud Platform**.
 
         ![connect GCP](media/connect-gcp-add.png)
 
@@ -152,7 +139,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For an existing connector**
 
-    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
+    1. In the list of connectors, on the row in which the GCP connector appears, click **Connect security auditing**.
 
         ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/connect-gcp-app-edit-audit.png)
 
@@ -245,7 +232,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
     ![Screenshot showing create private key for dedicated service account dialog](media/connect-gcp-security-configuration-4.png)
 
     > [!NOTE]
-    > You'll need the JSON file that is downloaded to your machine later.
+    > You'll need the JSON file that is downloaded to your device later.
 
 #### Retrieve your Organization ID
 

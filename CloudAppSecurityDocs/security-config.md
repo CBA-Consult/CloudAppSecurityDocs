@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Get security configuration recommendations for your public cloud platforms
 description: This article provides information about how to get security configuration recommendations in Cloud App Security for your organization's public cloud platforms.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Security configuration overview
 
@@ -36,6 +15,17 @@ Use the following links to get more details about the different assessment types
 - **[Azure recommendations](security-config-azure.md)**: Azure best practices security recommendations consumed from Azure Security Center.
 - **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, consumed from AWS Security Hub.
 - **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, consumed from Google Security Command Center and Security Health Analytics.
+
+## Security recommendations report
+
+Cloud App Security lets you export a details list of security recommendations to help you monitor, understand, and customize your cloud environments to better protect your organization.
+
+To export a security recommendations list, perform the following steps:
+
+1. In Cloud App Security, browse to **Investigate** > **Security configuration**.
+
+1. Select the security recommendations tab for the relevant cloud.
+1. On the top-right of the recommendations table, click **Export**.
 
 ## Next steps
 

@@ -1,30 +1,10 @@
 ---
-# required metadata
-
-title: Set IP ranges and tags - Cloud App Security
+title: Set IP ranges and tags 
 description: This article provides instructions for working with IP tags and IP categories.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 12/16/2018
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
-#  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
+# <a name="IPtagsandRanges"></a>Working with IP ranges and tags
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -46,7 +26,7 @@ Built-in IP address tags and custom IP tags are considered hierarchically. Custo
 
 ## Create an IP address range
 
-In the menu bar, click the settings icon. Select **IP address ranges**. Click the plus sign to add IP address ranges and set the following fields:
+In the menu bar, click the settings icon. Select **IP address ranges**. Click the plus sign (**+**) to add IP address ranges and set the following fields:
 
 1. **Name** your IP range. The name doesn't appear in the activities log, it's only used to manage your IP range.
 
@@ -62,7 +42,7 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 
     - **Cloud provider**: These IPs should be the IP addresses used by your cloud provider.
 
-    - **Corporate**: These IPs should be all the IP addresses of your internal network, your branch offices, and your Wi-Fi roaming addresses.
+    - **Corporate**: These IPs should be all the public IP addresses of your internal network, your branch offices, and your Wi-Fi roaming addresses.
 
     - **Risky**: These IPs should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, and so on.
 
